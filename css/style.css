@@ -1,0 +1,236 @@
+
+/* game.html  */
+
+
+
+body {
+  margin: 0;
+  padding: 0px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/cool-background.png');
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+#text1{
+  margin: 0;
+  padding-left: 200px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/cool-background.png');
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* Import Google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+.wrapper {
+  width: 65vmin;
+  height: 70vmin;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  background: #293447;
+  box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+}
+.game-details {
+  color: #B8C6DC;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+}
+.play-board {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background: #212837;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+.play-board .food {
+  background: #FF003D;
+}
+.play-board .head {
+  background: #60CBFF;
+}
+.controls {
+  display: none;
+  justify-content: space-between;
+}
+.controls i {
+  padding: 25px 0;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #B8C6DC;
+  width: calc(100% / 4);
+  cursor: pointer;
+  border-right: 1px solid #171B26;
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 90vmin;
+    height: 115vmin;
+  }
+  .game-details {
+    font-size: 1rem;
+    padding: 15px 27px;
+  }
+  .controls {
+    display: flex;
+  }
+  .controls i {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+}
+
+
+/* index.pagina  */
+
+
+
+#product-container {
+  text-align: center;
+  color: black;
+}
+
+#product-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#product-container .product {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#product-container .product:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+/* game.html2  */
+
+#score2 { text-align: center; }
+
+#game2 {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  margin: auto;
+  background-image: url("../images/background2\ \(2\).jpg");
+  background-size: cover;
+}
+
+#dino2 {
+  height: 100px;
+  width: 100px;
+  top: 225px;
+  position: relative;
+  background-image: url("../images/Final\ Green\ Man\ Walking.gif");
+  background-size: cover;
+}
+
+#rock2 {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 165px;
+  left: 550px;
+  background-image: url("../images/character2\(1\).png");
+  background-size: 80px;
+  animation: rock 2.33s infinite;
+
+}
+
+@keyframes rock {
+  0%{left: 550px;}
+  100%{left: -50px;}
+}
+
+.jump-animation2 {
+  animation: jump 1.3s;
+}
+
+@keyframes jump {
+  0%{top: 225px;}
+  50%{top: 75px;}
+  75%{top: 75px;}
+  100%{top: 225px;}
+}
+
+
+
+
+
+
+/* game.html3  */
+
+#score3 { text-align: center; }
+
+#game3 {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  margin: auto;
+  background-image: url("../images/Dungeon\ backround.png");
+  background-size: cover;
+}
+
+#dino3 {
+  height: 75px;
+  width: 130px;
+  top: 225px;
+  position: relative;
+  background-image: url("../images/MinecartFinal.gif");
+  background-size: cover;
+}
+
+#rock3 {
+  width: 110px;
+  height: 70px;
+  position: relative;
+  top: 155px;
+  left: 550px;
+  background-image: url("../images/SnakeSNAKE!!.png");
+  background-size: 170px;
+  background-position: center;
+  animation: rock 1.33s infinite;
+}
+
+@keyframes rock {
+  0%{left: 550px;}
+  100%{left: -50px;}
+}
+
+.jump-animation3 {
+  animation: jump 0.5s;
+}
+
+@keyframes jump {
+  0%{top: 225px;}
+  50%{top: 75px;}
+  75%{top: 75px;}
+  100%{top: 225px;}
+}
+
